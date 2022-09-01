@@ -1,0 +1,12 @@
+C:\Users\NamAnh\Documents\Intern\BackEnd\MISA.WEB07.TNANH.MultiLayer\MISA.WEB07.TNANH.MultiLayer.Common\bin\Debug\net6.0\MISA.WEB07.TNANH.MultiLayer.Common.deps.json
+C:\Users\NamAnh\Documents\Intern\BackEnd\MISA.WEB07.TNANH.MultiLayer\MISA.WEB07.TNANH.MultiLayer.Common\bin\Debug\net6.0\MISA.WEB07.TNANH.MultiLayer.Common.dll
+C:\Users\NamAnh\Documents\Intern\BackEnd\MISA.WEB07.TNANH.MultiLayer\MISA.WEB07.TNANH.MultiLayer.Common\bin\Debug\net6.0\MISA.WEB07.TNANH.MultiLayer.Common.pdb
+C:\Users\NamAnh\Documents\Intern\BackEnd\MISA.WEB07.TNANH.MultiLayer\MISA.WEB07.TNANH.MultiLayer.Common\obj\Debug\net6.0\MISA.WEB07.TNANH.MultiLayer.Common.csproj.AssemblyReference.cache
+C:\Users\NamAnh\Documents\Intern\BackEnd\MISA.WEB07.TNANH.MultiLayer\MISA.WEB07.TNANH.MultiLayer.Common\obj\Debug\net6.0\MISA.WEB07.TNANH.MultiLayer.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\NamAnh\Documents\Intern\BackEnd\MISA.WEB07.TNANH.MultiLayer\MISA.WEB07.TNANH.MultiLayer.Common\obj\Debug\net6.0\MISA.WEB07.TNANH.MultiLayer.Common.AssemblyInfoInputs.cache
+C:\Users\NamAnh\Documents\Intern\BackEnd\MISA.WEB07.TNANH.MultiLayer\MISA.WEB07.TNANH.MultiLayer.Common\obj\Debug\net6.0\MISA.WEB07.TNANH.MultiLayer.Common.AssemblyInfo.cs
+C:\Users\NamAnh\Documents\Intern\BackEnd\MISA.WEB07.TNANH.MultiLayer\MISA.WEB07.TNANH.MultiLayer.Common\obj\Debug\net6.0\MISA.WEB07.TNANH.MultiLayer.Common.csproj.CoreCompileInputs.cache
+C:\Users\NamAnh\Documents\Intern\BackEnd\MISA.WEB07.TNANH.MultiLayer\MISA.WEB07.TNANH.MultiLayer.Common\obj\Debug\net6.0\MISA.WEB07.TNANH.MultiLayer.Common.dll
+C:\Users\NamAnh\Documents\Intern\BackEnd\MISA.WEB07.TNANH.MultiLayer\MISA.WEB07.TNANH.MultiLayer.Common\obj\Debug\net6.0\refint\MISA.WEB07.TNANH.MultiLayer.Common.dll
+C:\Users\NamAnh\Documents\Intern\BackEnd\MISA.WEB07.TNANH.MultiLayer\MISA.WEB07.TNANH.MultiLayer.Common\obj\Debug\net6.0\MISA.WEB07.TNANH.MultiLayer.Common.pdb
+C:\Users\NamAnh\Documents\Intern\BackEnd\MISA.WEB07.TNANH.MultiLayer\MISA.WEB07.TNANH.MultiLayer.Common\obj\Debug\net6.0\ref\MISA.WEB07.TNANH.MultiLayer.Common.dll

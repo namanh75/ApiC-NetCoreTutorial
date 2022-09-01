@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "37YuGXgFykEDRu6opTO4Ld17Rsbu08sO6v99K7MeJnncdErcI0LNsFmEMTITDemKEqvp5+DzfCLS005SE2K58g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\NamAnh\\Documents\\Intern\\BackEnd\\MISA.WEB07.TNANH.MultiLayer\\MISA.WEB07.TNANH.MultiLayer.BL\\MISA.WEB07.TNANH.MultiLayer.BL.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\NamAnh\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
+    "C:\\Users\\NamAnh\\.nuget\\packages\\mysqlconnector\\2.1.12\\mysqlconnector.2.1.12.nupkg.sha512"
+  ],
+  "logs": []
+}

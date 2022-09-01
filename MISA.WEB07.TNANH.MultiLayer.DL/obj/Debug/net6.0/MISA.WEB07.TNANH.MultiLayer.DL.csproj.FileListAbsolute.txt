@@ -1,0 +1,15 @@
+C:\Users\NamAnh\Documents\Intern\BackEnd\MISA.WEB07.TNANH.MultiLayer\MISA.WEB07.TNANH.MultiLayer.DL\bin\Debug\net6.0\MISA.WEB07.TNANH.MultiLayer.DL.deps.json
+C:\Users\NamAnh\Documents\Intern\BackEnd\MISA.WEB07.TNANH.MultiLayer\MISA.WEB07.TNANH.MultiLayer.DL\bin\Debug\net6.0\MISA.WEB07.TNANH.MultiLayer.DL.dll
+C:\Users\NamAnh\Documents\Intern\BackEnd\MISA.WEB07.TNANH.MultiLayer\MISA.WEB07.TNANH.MultiLayer.DL\bin\Debug\net6.0\MISA.WEB07.TNANH.MultiLayer.DL.pdb
+C:\Users\NamAnh\Documents\Intern\BackEnd\MISA.WEB07.TNANH.MultiLayer\MISA.WEB07.TNANH.MultiLayer.DL\bin\Debug\net6.0\MISA.WEB07.TNANH.MultiLayer.Common.dll
+C:\Users\NamAnh\Documents\Intern\BackEnd\MISA.WEB07.TNANH.MultiLayer\MISA.WEB07.TNANH.MultiLayer.DL\bin\Debug\net6.0\MISA.WEB07.TNANH.MultiLayer.Common.pdb
+C:\Users\NamAnh\Documents\Intern\BackEnd\MISA.WEB07.TNANH.MultiLayer\MISA.WEB07.TNANH.MultiLayer.DL\obj\Debug\net6.0\MISA.WEB07.TNANH.MultiLayer.DL.csproj.AssemblyReference.cache
+C:\Users\NamAnh\Documents\Intern\BackEnd\MISA.WEB07.TNANH.MultiLayer\MISA.WEB07.TNANH.MultiLayer.DL\obj\Debug\net6.0\MISA.WEB07.TNANH.MultiLayer.DL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\NamAnh\Documents\Intern\BackEnd\MISA.WEB07.TNANH.MultiLayer\MISA.WEB07.TNANH.MultiLayer.DL\obj\Debug\net6.0\MISA.WEB07.TNANH.MultiLayer.DL.AssemblyInfoInputs.cache
+C:\Users\NamAnh\Documents\Intern\BackEnd\MISA.WEB07.TNANH.MultiLayer\MISA.WEB07.TNANH.MultiLayer.DL\obj\Debug\net6.0\MISA.WEB07.TNANH.MultiLayer.DL.AssemblyInfo.cs
+C:\Users\NamAnh\Documents\Intern\BackEnd\MISA.WEB07.TNANH.MultiLayer\MISA.WEB07.TNANH.MultiLayer.DL\obj\Debug\net6.0\MISA.WEB07.TNANH.MultiLayer.DL.csproj.CoreCompileInputs.cache
+C:\Users\NamAnh\Documents\Intern\BackEnd\MISA.WEB07.TNANH.MultiLayer\MISA.WEB07.TNANH.MultiLayer.DL\obj\Debug\net6.0\MISA.WEB07.TNANH.MultiLayer.DL.csproj.CopyComplete
+C:\Users\NamAnh\Documents\Intern\BackEnd\MISA.WEB07.TNANH.MultiLayer\MISA.WEB07.TNANH.MultiLayer.DL\obj\Debug\net6.0\MISA.WEB07.TNANH.MultiLayer.DL.dll
+C:\Users\NamAnh\Documents\Intern\BackEnd\MISA.WEB07.TNANH.MultiLayer\MISA.WEB07.TNANH.MultiLayer.DL\obj\Debug\net6.0\refint\MISA.WEB07.TNANH.MultiLayer.DL.dll
+C:\Users\NamAnh\Documents\Intern\BackEnd\MISA.WEB07.TNANH.MultiLayer\MISA.WEB07.TNANH.MultiLayer.DL\obj\Debug\net6.0\MISA.WEB07.TNANH.MultiLayer.DL.pdb
+C:\Users\NamAnh\Documents\Intern\BackEnd\MISA.WEB07.TNANH.MultiLayer\MISA.WEB07.TNANH.MultiLayer.DL\obj\Debug\net6.0\ref\MISA.WEB07.TNANH.MultiLayer.DL.dll
