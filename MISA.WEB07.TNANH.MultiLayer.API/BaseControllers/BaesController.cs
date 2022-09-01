@@ -41,6 +41,11 @@ namespace MISA.WEB07.TNANH.MultiLayer.NTier.BaseControllers
                 var res = _baseBL.GetAllRecords();
                 return StatusCode(StatusCodes.Status200OK, res);
             }
+            catch (MySqlException mySqlException)
+            {
+                Console.WriteLine(mySqlException);
+                return StatusCode(StatusCodes.Status400BadRequest, mySqlException);
+            }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
@@ -70,7 +75,6 @@ namespace MISA.WEB07.TNANH.MultiLayer.NTier.BaseControllers
             {
                 Console.WriteLine(mySqlException);
                 return StatusCode(StatusCodes.Status400BadRequest, mySqlException);
-
             }
             catch (Exception exception)
             {

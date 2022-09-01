@@ -35,25 +35,7 @@ namespace MISA.WEB07.TNANH.MultiLayer.BL
         {
             return _officerDL.GetPagingOfficer(Offset, Limit);
         }
-        public Officer GetOfficerByID(Guid OfficerID)
-        {
-            return _officerDL.GetOfficerByID(OfficerID);
-        }
 
-        public int InsertOfficer(Officer officer)
-        {
-            //validate 
-
-            //if validate success
-            int res = _officerDL.InsertOfficer(officer);
-            return res;
-        }
-
-        public int DeleteOfficer(Guid OfficerID)
-        {
-            int res = _officerDL.DeleteOfficer(OfficerID);
-            return res;
-        }
         #endregion
     }
 }

@@ -20,10 +20,9 @@ namespace MISA.WEB07.TNANH.MultiLayer.DL
         {
             using (var mySqlConnection = new MySqlConnection(DatabaseContext.ConnectionString))
             {
-                string className = typeof(T).Name.ToLower();
-                var sqlCommandGetAllRecords = $"SELECT * FROM {className}";
-
-                var res = mySqlConnection.Query(sqlCommandGetAllRecords);
+                string className = typeof(T).Name;
+                var sqlCommandGetAllRecords = $"Proc_{className.ToLower()}_Get{className}s";
+                var res = mySqlConnection.Query(sqlCommandGetAllRecords, commandType: System.Data.CommandType.StoredProcedure);
                 return res;
             }
         }

@@ -15,8 +15,4 @@
     <ProjectReference Include="..\MISA.WEB07.TNANH.MultiLayer.Common\MISA.WEB07.TNANH.MultiLayer.Common.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="ErrorDL\" />
-  </ItemGroup>
-
 </Project>
