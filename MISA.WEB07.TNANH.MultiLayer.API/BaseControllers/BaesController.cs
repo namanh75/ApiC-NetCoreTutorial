@@ -6,7 +6,7 @@ using Swashbuckle.AspNetCore.Annotations;
 
 namespace MISA.WEB07.TNANH.MultiLayer.NTier.BaseControllers
 {
-    [Route("api/[controller]")]
+    [Route("api/v1/[controller]")]
     [ApiController]
     public class BaesController<T> : ControllerBase
     {

@@ -11,6 +11,10 @@ builder.Services.AddScoped<IOfficerBL, OfficerBL>();
 builder.Services.AddScoped<IOfficerDL, OfficerDL>();
 builder.Services.AddScoped<IGroupBL, GroupBL>();
 builder.Services.AddScoped<IGroupDL, GroupDL>();
+builder.Services.AddScoped<ISubjectBL, SubjectBL>();
+builder.Services.AddScoped<ISubjectDL, SubjectDL>();
+builder.Services.AddScoped<IStorageRoomBL, StorageRoomBL>();
+builder.Services.AddScoped<IStorageRoomDL, StorageRoomDL>();
 //connect db tu file appsettings
 DatabaseContext.ConnectionString = builder.Configuration.GetConnectionString("mySqlConnection");
 
