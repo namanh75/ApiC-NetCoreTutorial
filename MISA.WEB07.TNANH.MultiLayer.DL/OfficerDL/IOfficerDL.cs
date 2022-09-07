@@ -13,6 +13,7 @@ namespace MISA.WEB07.TNANH.MultiLayer.DL
         /// <returns>
         /// Số bản ghi giới hạn 
         /// </returns>
-        public PagingData GetPagingOfficer(int Offset, int Limit);
+        public PagingData GetPagingOfficer(int Offset, int Limit, string condition);
+
     }
 }

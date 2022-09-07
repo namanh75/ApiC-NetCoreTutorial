@@ -31,10 +31,19 @@ namespace MISA.WEB07.TNANH.MultiLayer.BL
         /// <returns>
         /// Số bản ghi giới hạn 
         /// </returns>
-        public PagingData GetPagingOfficer(int Offset, int Limit)
+        public PagingData GetPagingOfficer(int Offset, int Limit, string condition)
         {
-            return _officerDL.GetPagingOfficer(Offset, Limit);
+            return _officerDL.GetPagingOfficer(Offset, Limit, condition);
         }
+
+        /// <summary>
+        /// Danh sách nhân viên có chứa chuỗi trong ô tìm kiếm
+        /// </summary>
+        /// <param name="OfficerString">Chuỗi được nhập trong ô tìm kiếm</param>
+        /// <returns>
+        /// Danh sách nhân viên
+        /// </returns>
+        /// CreatedBy: Trần Nam Anh (7/9/2022)
 
         #endregion
     }

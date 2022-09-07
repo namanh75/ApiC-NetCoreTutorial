@@ -39,11 +39,11 @@ namespace MISA.WEB07.TNANH.MultiLayer.NTier
         [SwaggerResponse(StatusCodes.Status200OK, type: typeof(object))]
         [SwaggerResponse(StatusCodes.Status400BadRequest)]
         [SwaggerResponse(StatusCodes.Status500InternalServerError)]
-        public IActionResult GetPagingOfficer([FromQuery] int Offset, [FromQuery] int Limit)
+        public IActionResult GetPagingOfficer([FromQuery] int Offset, [FromQuery] int Limit, string filter)
         {
             try
             {
-                return StatusCode(StatusCodes.Status200OK, _officerBL.GetPagingOfficer(Offset, Limit));
+                return StatusCode(StatusCodes.Status200OK, _officerBL.GetPagingOfficer(Offset, Limit, filter));
             }
             catch (Exception ex)
             {
