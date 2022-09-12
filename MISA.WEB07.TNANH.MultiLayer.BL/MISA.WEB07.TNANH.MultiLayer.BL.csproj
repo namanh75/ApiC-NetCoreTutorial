@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="ClosedXML" Version="0.96.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\MISA.WEB07.TNANH.MultiLayer.Common\MISA.WEB07.TNANH.MultiLayer.Common.csproj" />
     <ProjectReference Include="..\MISA.WEB07.TNANH.MultiLayer.DL\MISA.WEB07.TNANH.MultiLayer.DL.csproj" />
   </ItemGroup>

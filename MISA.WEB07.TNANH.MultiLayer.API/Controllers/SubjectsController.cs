@@ -4,7 +4,7 @@ using MISA.WEB07.TNANH.MultiLayer.NTier.BaseControllers;
 
 namespace MISA.WEB07.TNANH.MultiLayer.NTier
 {
-    public class SubjectsController : BaesController<Subject>
+    public class SubjectsController : BaseController<Subject>
     {
         #region Field
 

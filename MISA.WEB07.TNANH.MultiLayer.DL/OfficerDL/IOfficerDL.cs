@@ -15,5 +15,15 @@ namespace MISA.WEB07.TNANH.MultiLayer.DL
         /// </returns>
         public PagingData GetPagingOfficer(int Offset, int Limit, string condition);
 
+        /// <summary>
+        /// Xóa nhiều bản ghi
+        /// </summary>
+        /// <param name="ids">Danh sách ID của các bản ghi cần xóa</param>
+        /// <param name="size">Độ dài mảng</param>
+        /// <returns>
+        /// Số bản ghi bị ảnh hưởng
+        /// </returns>
+        /// CreatedBy: Trần Nam Anh (8/9/2022)
+        public int DeleteManyOfficers(Guid[] ids, int size );
     }
 }

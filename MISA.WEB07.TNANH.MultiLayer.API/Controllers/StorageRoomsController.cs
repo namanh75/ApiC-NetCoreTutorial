@@ -4,7 +4,7 @@ using MISA.WEB07.TNANH.MultiLayer.NTier.BaseControllers;
 
 namespace MISA.WEB07.TNANH.MultiLayer.NTier
 {
-    public class StorageRoomsController : BaesController<StorageRoom>
+    public class StorageRoomsController : BaseController<StorageRoom>
     {
         #region Field
 

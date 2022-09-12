@@ -74,6 +74,7 @@ namespace MISA.WEB07.TNANH.MultiLayer.Common.Entities
         /// <summary>
         /// Tên tổ chuyên môn
         /// </summary>
+
         public string? GroupName { get; set; }
 
         /// <summary>
@@ -84,8 +85,8 @@ namespace MISA.WEB07.TNANH.MultiLayer.Common.Entities
         /// <summary>
         /// Tên môn học
         /// </summary>
-        public string? SubjectName { get; set; }
 
+        public string? SubjectName { get; set; }
         /// <summary>
         /// ID kho phòng
         /// </summary>
@@ -94,6 +95,7 @@ namespace MISA.WEB07.TNANH.MultiLayer.Common.Entities
         /// <summary>
         /// Tên kho phòng
         /// </summary>
+
         public string? StorageRoomName { get; set; }
 
         /// <summary>

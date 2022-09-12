@@ -13,7 +13,7 @@ namespace MISA.WEB07.TNANH.MultiLayer.Common.Utilities
         /// </summary>
         /// <typeparam name="T">Kiểu dữ liệu của entity</typeparam>
         /// <returns>Tên bảng</returns>
-        /// Created by: TMSANG (24/08/2022)
+        /// Created by: Trần Nam Anh (9/9/2022)
         public static string GetTableName<T>()
         {
             string tableName = typeof(T).Name;

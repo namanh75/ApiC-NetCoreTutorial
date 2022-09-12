@@ -3,7 +3,7 @@ using MISA.WEB07.TNANH.MultiLayer.Common.Entities;
 using MISA.WEB07.TNANH.MultiLayer.NTier.BaseControllers;
 namespace MISA.WEB07.TNANH.MultiLayer.NTier
 {
-    public class GroupsController : BaesController<Group>
+    public class GroupsController : BaseController<Group>
     {
         #region Field
 

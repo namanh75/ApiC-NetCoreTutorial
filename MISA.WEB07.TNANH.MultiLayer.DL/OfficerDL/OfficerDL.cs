@@ -45,7 +45,7 @@ namespace MISA.WEB07.TNANH.MultiLayer.DL
                     return new PagingData
                     {
                         Data = res.Read<Officer>().ToList(),
-                        TotalCount = res.Read<int>().Single()
+                        TotalCount = res.Read<int>().Single() - 1
                     };
                 }
                 else
@@ -62,6 +62,32 @@ namespace MISA.WEB07.TNANH.MultiLayer.DL
             }
 
         }
+
+        /// <summary>
+        /// Xóa nhiều bản ghi
+        /// </summary>
+        /// <param name="ids">Danh sách ID của các bản ghi cần xóa</param>
+        /// <param name="size">Độ dài mảng</param>
+        /// <returns>
+        /// Số bản ghi bị ảnh hưởng
+        /// </returns>
+        /// CreatedBy: Trần Nam Anh (8/9/2022)
+        public int DeleteManyOfficers(Guid[] ids, int size)
+        {
+            using (var mySqlConnection = new MySqlConnection(DatabaseContext.ConnectionString))
+            {
+                var sqlCommandDelete = $"DELETE FROM officer WHERE OfficerID IN (";
+                for (int i = 0; i < size; i++)
+                {
+                    if (i != size - 1) sqlCommandDelete += $"'{ids[i]}',";
+                    if (i == size - 1) sqlCommandDelete += $"'{ids[i]}'";
+                }
+                sqlCommandDelete += ")";
+                var res = mySqlConnection.Execute(sqlCommandDelete);
+                return res;
+            }
+        }
+
 
     }
 }
