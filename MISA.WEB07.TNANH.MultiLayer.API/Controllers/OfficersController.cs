@@ -47,7 +47,7 @@ namespace MISA.WEB07.TNANH.MultiLayer.NTier
         [SwaggerResponse(StatusCodes.Status200OK, type: typeof(object))]
         [SwaggerResponse(StatusCodes.Status400BadRequest)]
         [SwaggerResponse(StatusCodes.Status500InternalServerError)]
-        public IActionResult GetPagingOfficer([FromQuery] int Offset, [FromQuery] int Limit, string filter)
+        public IActionResult GetPagingOfficer([FromQuery] int Offset = 1, [FromQuery] int Limit = 10, string filter = "1")
         {
             try
             {
@@ -129,6 +129,28 @@ namespace MISA.WEB07.TNANH.MultiLayer.NTier
             }
         }
 
+        /// <summary>
+        /// Lấy mã nhân viên mới
+        /// </summary>
+        /// <returns>
+        /// 1 mã nhân viên mới
+        /// </returns>
+        [HttpGet("new-code")]
+        [SwaggerResponse(StatusCodes.Status200OK, type: typeof(object))]
+        [SwaggerResponse(StatusCodes.Status400BadRequest)]
+        [SwaggerResponse(StatusCodes.Status500InternalServerError)]
+        public IActionResult NewOfficerCode()
+        {
+            try
+            {
+                string officerCode = _officerBL.NewOfficerCode();
+                return StatusCode(StatusCodes.Status200OK, officerCode);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, HandleError.GenerateExceptionResult(ex, HttpContext));
+            }
+        }
         #endregion
 
     }

@@ -39,5 +39,13 @@ namespace MISA.WEB07.TNANH.MultiLayer.BL
         /// CreatedBy: Trần Nam Anh (10/9/2022)
         public XLWorkbook GetDownLoad(int Offset, int Limit, string filter);
 
+        /// <summary>
+        /// Lấy mã nhân viên mới
+        /// </summary>
+        /// <returns>
+        /// 1 mã nhân viên mới
+        /// </returns>
+        public string NewOfficerCode();
+
     }
 }

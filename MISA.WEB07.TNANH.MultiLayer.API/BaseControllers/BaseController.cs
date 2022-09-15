@@ -172,6 +172,7 @@ namespace MISA.WEB07.TNANH.MultiLayer.NTier.BaseControllers
         ///  ID của bản ghi bị xóa
         /// </returns>
         /// CreatedBy: Tran Nam Anh (26/8/2022)
+        /// CreatedBy: Tran Nam Anh (26/8/2022)
         [HttpDelete("{id}")]
         public virtual IActionResult DeleteOneRecord([FromRoute] Guid id)
         {

@@ -73,7 +73,7 @@ namespace MISA.WEB07.TNANH.MultiLayer.NTier.Helpers
             {
                 var errorResult = new ErrorResult(
                     Common.Enums.CukCukErrorCode.DuplicateCode,
-                    "Trùng mã",
+                    "trùng mã",
                     $"{mySqlException.Message}",
                     "https://openapi.misa.com.vn/errorcode/e003",
                     Activity.Current?.Id ?? httpContext?.TraceIdentifier);

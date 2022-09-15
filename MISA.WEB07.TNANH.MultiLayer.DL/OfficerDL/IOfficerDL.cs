@@ -24,6 +24,14 @@ namespace MISA.WEB07.TNANH.MultiLayer.DL
         /// Số bản ghi bị ảnh hưởng
         /// </returns>
         /// CreatedBy: Trần Nam Anh (8/9/2022)
-        public int DeleteManyOfficers(Guid[] ids, int size );
+        public int DeleteManyOfficers(Guid[] ids, int size);
+
+        /// <summary>
+        /// Lấy mã nhân viên mới
+        /// </summary>
+        /// <returns>
+        /// 1 mã nhân viên mới
+        /// </returns>
+        public List<Officer> NewOfficerCode();
     }
 }

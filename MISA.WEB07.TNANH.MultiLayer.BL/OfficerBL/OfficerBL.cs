@@ -89,7 +89,6 @@ namespace MISA.WEB07.TNANH.MultiLayer.BL
                 int j = 1;
                 foreach (Officer officer in OfficerList)
                 {
-
                     if (j <= Limit && officer != null)
                     {
                         ws.Cell(j + 3, 1).Value = $"{j}";
@@ -156,6 +155,25 @@ namespace MISA.WEB07.TNANH.MultiLayer.BL
         {
             if (n == 1) return "x";
             else return "";
+        }
+
+        /// <summary>
+        /// Lấy mã nhân viên mới
+        /// </summary>
+        /// <returns>
+        /// 1 mã nhân viên mới
+        /// </returns>
+        public string NewOfficerCode()
+        {
+            List<Officer> officers = _officerDL.NewOfficerCode();
+            double max_officer = 0;
+            foreach (var r in officers)
+            {
+                double officerCode = double.Parse(r.OfficerCode.Substring(2));
+                if (officerCode > max_officer) max_officer = officerCode;
+            }
+
+            return $"NV{max_officer}";
         }
 
         #endregion

@@ -10,3 +10,5 @@ C:\Users\NamAnh\Documents\Intern\BackEnd\MISA.WEB07.TNANH.MultiLayer\MISA.WEB07.
 C:\Users\NamAnh\Documents\Intern\BackEnd\MISA.WEB07.TNANH.MultiLayer\MISA.WEB07.TNANH.MultiLayer.Common\obj\Debug\net6.0\refint\MISA.WEB07.TNANH.MultiLayer.Common.dll
 C:\Users\NamAnh\Documents\Intern\BackEnd\MISA.WEB07.TNANH.MultiLayer\MISA.WEB07.TNANH.MultiLayer.Common\obj\Debug\net6.0\MISA.WEB07.TNANH.MultiLayer.Common.pdb
 C:\Users\NamAnh\Documents\Intern\BackEnd\MISA.WEB07.TNANH.MultiLayer\MISA.WEB07.TNANH.MultiLayer.Common\obj\Debug\net6.0\ref\MISA.WEB07.TNANH.MultiLayer.Common.dll
+C:\Users\NamAnh\Documents\Intern\BackEnd\MISA.WEB07.TNANH.MultiLayer\MISA.WEB07.TNANH.MultiLayer.Common\obj\Debug\net6.0\MISA.WEB07.TNANH.MultiLayer.Common.Resources.Resource.resources
+C:\Users\NamAnh\Documents\Intern\BackEnd\MISA.WEB07.TNANH.MultiLayer\MISA.WEB07.TNANH.MultiLayer.Common\obj\Debug\net6.0\MISA.WEB07.TNANH.MultiLayer.Common.csproj.GenerateResource.cache

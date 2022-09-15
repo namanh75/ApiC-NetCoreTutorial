@@ -88,6 +88,21 @@ namespace MISA.WEB07.TNANH.MultiLayer.DL
             }
         }
 
+        /// <summary>
+        /// Lấy mã nhân viên mới
+        /// </summary>
+        /// <returns>
+        /// 1 mã nhân viên mới
+        /// </returns>
+        public List<Officer> NewOfficerCode()
+        {
+            using (var mySqlConnection = new MySqlConnection(DatabaseContext.ConnectionString))
+            {
+                var sqlCommandGetOfficers = "Proc_officer_GetOfficers";
+                var res = mySqlConnection.Query<Officer>(sqlCommandGetOfficers, commandType: System.Data.CommandType.StoredProcedure);
+                return (List<Officer>)res;
+            }
+        }
 
     }
 }
