@@ -18,13 +18,13 @@ namespace MISA.WEB07.TNANH.MultiLayer.Common.Entities
         /// <summary>
         /// Mã nhân viên
         /// </summary>
-        [Required(ErrorMessage = "e004")]
+        //[Required(ErrorMessage = "e004")]
         public string? OfficerCode { get; set; }
 
         /// <summary>
         /// Họ và tên nhân viên
         /// </summary>
-        [Required(ErrorMessage = "e005")]
+        //[Required(ErrorMessage = "e005")]
         public string? FullName { get; set; }
 
         /// <summary>
@@ -40,7 +40,7 @@ namespace MISA.WEB07.TNANH.MultiLayer.Common.Entities
         /// <summary>
         /// Số CMND/CCCD
         /// </summary>
-        [Required(ErrorMessage = "e006")]
+        //[Required(ErrorMessage = "e006")]
         public string? IdentifyNumber { get; set; }
 
         /// <summary>
@@ -56,14 +56,14 @@ namespace MISA.WEB07.TNANH.MultiLayer.Common.Entities
         /// <summary>
         /// Địa chỉ email
         /// </summary>
-        [Required(ErrorMessage = "e007")]
-        [EmailAddress(ErrorMessage = "e009")]
+        //[Required(ErrorMessage = "e007")]
+        //[EmailAddress(ErrorMessage = "e009")]
         public string? Email { get; set; }
 
         /// <summary>
         /// Số điện thoại
         /// </summary>
-        [Required(ErrorMessage = "e008")]
+        //[Required(ErrorMessage = "e008")]
         public string? PhoneNumber { get; set; }
 
         /// <summary>

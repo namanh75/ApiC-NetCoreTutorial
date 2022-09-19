@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MISA.WEB07.TNANH.MultiLayer.BL;
-using MISA.WEB07.TNANH.MultiLayer.NTier.Helpers;
+using MISA.WEB07.TNANH.MultiLayer.BL.Exceptions;
 using MySqlConnector;
 using Swashbuckle.AspNetCore.Annotations;
 
@@ -95,13 +95,12 @@ namespace MISA.WEB07.TNANH.MultiLayer.NTier.BaseControllers
         {
             try
             {
-                var validateResult = HandleError.ValidateEntity(ModelState, HttpContext);
-                if (validateResult != null)
-                {
-                    return StatusCode(StatusCodes.Status400BadRequest, validateResult);
-                }
+                //var validateResult = HandleError.ValidateEntity(ModelState, HttpContext);
+                //if (validateResult != null)
+                //{
+                //    return StatusCode(StatusCodes.Status400BadRequest, validateResult);
+                //}
                 var recordID = _baseBL.InsertOneRecord(record);
-
                 if (recordID != Guid.Empty)
                 {
                     return StatusCode(StatusCodes.Status201Created, recordID);
@@ -112,12 +111,21 @@ namespace MISA.WEB07.TNANH.MultiLayer.NTier.BaseControllers
 
                 }
             }
-            catch (MySqlException mySqlException)
+            catch (ValidateException validate)
             {
-                Console.WriteLine(mySqlException);
-                return StatusCode(StatusCodes.Status400BadRequest, mySqlException);
-
+                var res = new
+                {
+                    devMsg = validate.Message,
+                    userMsg = validate.Data
+                };
+                return StatusCode(StatusCodes.Status400BadRequest, res);
             }
+            //catch (MySqlException mySqlException)
+            //{
+            //    Console.WriteLine(mySqlException);
+            //    return StatusCode(StatusCodes.Status400BadRequest, mySqlException);
+
+            //}
             catch (Exception exception)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, exception);
@@ -137,11 +145,11 @@ namespace MISA.WEB07.TNANH.MultiLayer.NTier.BaseControllers
         {
             try
             {
-                var validateResult = HandleError.ValidateEntity(ModelState, HttpContext);
-                if (validateResult != null)
-                {
-                    return StatusCode(StatusCodes.Status400BadRequest, validateResult);
-                }
+                //var validateResult = HandleError.ValidateEntity(ModelState, HttpContext);
+                //if (validateResult != null)
+                //{
+                //    return StatusCode(StatusCodes.Status400BadRequest, validateResult);
+                //}
                 int result = _baseBL.UpdateOneRecord(id, record);
                 if (result > 0)
                 {
@@ -152,12 +160,21 @@ namespace MISA.WEB07.TNANH.MultiLayer.NTier.BaseControllers
                     return StatusCode(StatusCodes.Status400BadRequest, "e004");
                 }
             }
-            catch (MySqlException mySqlException)
+            catch (ValidateException validate)
             {
-                Console.WriteLine(mySqlException);
-                return StatusCode(StatusCodes.Status400BadRequest, mySqlException);
-
+                var res = new
+                {
+                    devMsg = validate.Message,
+                    userMsg = validate.Data
+                };
+                return StatusCode(StatusCodes.Status400BadRequest, res);
             }
+            //catch (MySqlException mySqlException)
+            //{
+            //    Console.WriteLine(mySqlException);
+            //    return StatusCode(StatusCodes.Status400BadRequest, mySqlException);
+
+            //}
             catch (Exception exception)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, exception);

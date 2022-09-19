@@ -1,4 +1,5 @@
 ﻿using Dapper;
+using MISA.WEB07.TNANH.MultiLayer.Common.Enums;
 using MySqlConnector;
 using System.ComponentModel.DataAnnotations;
 
@@ -145,6 +146,51 @@ namespace MISA.WEB07.TNANH.MultiLayer.DL
                 int TotolCount = 0;
                 if (res != null) TotolCount = 1;
                 return TotolCount;
+            }
+        }
+
+        /// <summary>
+        /// Kiểm tra xem 1 một mã có bị trùng không
+        /// </summary>
+        /// <param name="method">chỉnh sửa hay thêm mới</param>
+        /// <param name="id">ID của bản ghi</param>
+        /// <param name="code">mã code bản ghi</param>
+        /// <returns>
+        /// true - nếu mã bị trùng
+        /// false - nếu mã không bị trùng
+        /// </returns>
+        /// CreatedBy: Trần Nam Anh (19/9/2022)
+        public bool CheckDuplicateCode(Method method, string code, Guid id)
+        {
+            string className = typeof(T).Name;
+            string storedProc = $"Proc_{className.ToLower()}_CheckDuplicateCode";
+
+            var parameters = new DynamicParameters();
+
+            parameters.Add("@v_Code", code);
+            using (var mySqlConnection = new MySqlConnection(DatabaseContext.ConnectionString))
+            {
+                var result = mySqlConnection.QueryFirstOrDefault<Guid>(storedProc, parameters, commandType: System.Data.CommandType.StoredProcedure);
+
+                bool isDuplicate = false;
+                switch (method)
+                {
+                    case Method.Add:
+                        if (result != Guid.Empty)
+                        {
+                            isDuplicate = true;
+                        }
+                        break;
+                    case Method.Edit:
+                        if (result != id && result != Guid.Empty)
+                        {
+                            isDuplicate = true;
+                        }
+                        break;
+                }
+
+                return isDuplicate;
+
             }
         }
 

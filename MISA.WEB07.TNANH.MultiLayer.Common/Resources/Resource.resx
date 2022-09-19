@@ -117,13 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Error_UserMessage_Date" xml:space="preserve">
+    <value>Ngày được chọn không được lớn hơn ngày hiện tại</value>
+  </data>
   <data name="Error_UserMessage_DuplicateCode" xml:space="preserve">
-    <value>Số hiệu cán bộ đã tồn tại trong hệ thống, vui lòng kiểm tra lại</value>
+    <value>Số hiệu cán bộ đã tồn tại trong hệ thống</value>
+  </data>
+  <data name="Error_UserMessage_Email" xml:space="preserve">
+    <value>Email sai định dạng</value>
+  </data>
+  <data name="Error_UserMessage_EmptyCode" xml:space="preserve">
+    <value>Mã nhân viên không được để trống</value>
   </data>
   <data name="Error_UserMessage_Exception" xml:space="preserve">
     <value>Có lỗi xảy ra, vui lòng liên hệ MISA</value>
   </data>
   <data name="Error_UserMessage_Invalid" xml:space="preserve">
     <value>Dữ liệu đầu vào không hợp lệ</value>
+  </data>
+  <data name="Error_UserMessage_OfficerName" xml:space="preserve">
+    <value>Họ tên nhân viên không được bỏ trống</value>
+  </data>
+  <data name="Error_UserMessage_PhoneNumber" xml:space="preserve">
+    <value>Số điện thoại sai định dạng</value>
   </data>
 </root>

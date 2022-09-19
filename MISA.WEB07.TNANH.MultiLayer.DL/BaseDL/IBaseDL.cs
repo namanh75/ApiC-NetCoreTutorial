@@ -1,4 +1,6 @@
-﻿namespace MISA.WEB07.TNANH.MultiLayer.DL
+﻿using MISA.WEB07.TNANH.MultiLayer.Common.Enums;
+
+namespace MISA.WEB07.TNANH.MultiLayer.DL
 {
     public interface IBaseDL<T>
     {
@@ -49,5 +51,17 @@
         /// CreatedBy: Tran Nam Anh (26/8/2022)
         public int DeleteOneRecord(Guid id);
 
+        /// <summary>
+        /// Kiểm tra xem 1 một mã có bị trùng không
+        /// </summary>
+        /// <param name="method">chỉnh sửa hay thêm mới</param>
+        /// <param name="id">ID của bản ghi</param>
+        /// <param name="code">mã code bản ghi</param>
+        /// <returns>
+        /// true - nếu mã bị trùng
+        /// false - nếu mã không bị trùng
+        /// </returns>
+        /// CreatedBy: Trần Nam Anh (19/9/2022)
+        public bool CheckDuplicateCode(Method method, string code, Guid id);
     }
 }

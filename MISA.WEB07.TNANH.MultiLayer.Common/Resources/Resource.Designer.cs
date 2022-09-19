@@ -61,11 +61,38 @@ namespace MISA.WEB07.TNANH.MultiLayer.Common.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Số hiệu cán bộ đã tồn tại trong hệ thống, vui lòng kiểm tra lại.
+        ///   Looks up a localized string similar to Ngày được chọn không được lớn hơn ngày hiện tại.
+        /// </summary>
+        public static string Error_UserMessage_Date {
+            get {
+                return ResourceManager.GetString("Error_UserMessage_Date", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Số hiệu cán bộ đã tồn tại trong hệ thống.
         /// </summary>
         public static string Error_UserMessage_DuplicateCode {
             get {
                 return ResourceManager.GetString("Error_UserMessage_DuplicateCode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Email sai định dạng.
+        /// </summary>
+        public static string Error_UserMessage_Email {
+            get {
+                return ResourceManager.GetString("Error_UserMessage_Email", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mã nhân viên không được để trống.
+        /// </summary>
+        public static string Error_UserMessage_EmptyCode {
+            get {
+                return ResourceManager.GetString("Error_UserMessage_EmptyCode", resourceCulture);
             }
         }
         
@@ -84,6 +111,24 @@ namespace MISA.WEB07.TNANH.MultiLayer.Common.Resources {
         public static string Error_UserMessage_Invalid {
             get {
                 return ResourceManager.GetString("Error_UserMessage_Invalid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Họ tên nhân viên không được bỏ trống.
+        /// </summary>
+        public static string Error_UserMessage_OfficerName {
+            get {
+                return ResourceManager.GetString("Error_UserMessage_OfficerName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Số điện thoại sai định dạng.
+        /// </summary>
+        public static string Error_UserMessage_PhoneNumber {
+            get {
+                return ResourceManager.GetString("Error_UserMessage_PhoneNumber", resourceCulture);
             }
         }
     }

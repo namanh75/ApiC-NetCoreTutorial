@@ -16,7 +16,7 @@ namespace MISA.WEB07.TNANH.MultiLayer.NTier.Helpers
         /// <param name="modelState">Đối tượng modelstate hứng được khi gọi API</param>
         /// <param name="httpContext">Context khi gọi API sử dụng để lấy được traceId</param>
         /// <returns>Đối tượng chứa thông tin lỗi trả về cho client</returns>
-        /// Created by: TMSANG (25/08/2022)
+        /// Created by: Tran Nam Anh
         public static ErrorResult? ValidateEntity(ModelStateDictionary modelState, HttpContext httpContext)
         {
             if (!modelState.IsValid)
@@ -48,7 +48,7 @@ namespace MISA.WEB07.TNANH.MultiLayer.NTier.Helpers
         /// <param name="exception">Đối tượng exception gặp phải</param>
         /// <param name="httpContext">Context khi gọi API sử dụng để lấy được traceId</param>
         /// <returns>Đối tượng chứa thông tin lỗi trả về cho client</returns>
-        /// Created by: TMSANG (25/08/2022)
+        /// Created by: Tran Nam Anh
         public static ErrorResult? GenerateExceptionResult(Exception exception, HttpContext httpContext)
         {
             Console.WriteLine(exception.Message);
@@ -66,7 +66,7 @@ namespace MISA.WEB07.TNANH.MultiLayer.NTier.Helpers
         /// <param name="exception">Đối tượng exception gặp phải</param>
         /// <param name="httpContext">Context khi gọi API sử dụng để lấy được traceId</param>
         /// <returns>Đối tượng chứa thông tin lỗi trả về cho client</returns>
-        /// Created by: TMSANG (25/08/2022)
+        /// Created by: Tran Nam Anh
         public static ErrorResult? GenerateDuplicateCodeErrorResult(MySqlException mySqlException, HttpContext httpContext)
         {
             if (mySqlException.ErrorCode == MySqlErrorCode.DuplicateKeyEntry)

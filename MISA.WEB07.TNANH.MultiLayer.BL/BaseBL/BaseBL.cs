@@ -1,4 +1,5 @@
-﻿using MISA.WEB07.TNANH.MultiLayer.DL;
+﻿using MISA.WEB07.TNANH.MultiLayer.Common.Enums;
+using MISA.WEB07.TNANH.MultiLayer.DL;
 
 namespace MISA.WEB07.TNANH.MultiLayer.BL
 {
@@ -53,6 +54,7 @@ namespace MISA.WEB07.TNANH.MultiLayer.BL
         /// CreatedBy: Tran Nam Anh (30/8/2022)
         public Guid InsertOneRecord(T record)
         {
+            Validate(Method.Add, record);
             return _baseDL.InsertOneRecord(record);
         }
 
@@ -66,6 +68,8 @@ namespace MISA.WEB07.TNANH.MultiLayer.BL
         /// CreatedBy: Tran Nam Anh (1/9/2022)
         public int UpdateOneRecord(Guid id, T record)
         {
+
+            Validate(Method.Edit, record);
             return _baseDL.UpdateOneRecord(id, record);
         }
 
@@ -83,6 +87,10 @@ namespace MISA.WEB07.TNANH.MultiLayer.BL
             return _baseDL.DeleteOneRecord(id);
         }
 
+        protected virtual void Validate(Method method, T record)
+        {
+
+        }
         #endregion
 
     }

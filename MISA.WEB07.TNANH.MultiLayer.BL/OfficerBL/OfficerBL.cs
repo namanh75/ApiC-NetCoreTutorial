@@ -1,7 +1,10 @@
 ﻿using ClosedXML.Excel;
+using MISA.WEB07.TNANH.MultiLayer.BL.Exceptions;
 using MISA.WEB07.TNANH.MultiLayer.Common.Entities;
 using MISA.WEB07.TNANH.MultiLayer.Common.Entities.DTO;
+using MISA.WEB07.TNANH.MultiLayer.Common.Enums;
 using MISA.WEB07.TNANH.MultiLayer.DL;
+using System.ComponentModel.DataAnnotations;
 using System.Drawing;
 
 namespace MISA.WEB07.TNANH.MultiLayer.BL
@@ -11,6 +14,8 @@ namespace MISA.WEB07.TNANH.MultiLayer.BL
         #region Field
 
         private IOfficerDL _officerDL;
+
+        public List<string> Errors = new List<string>();
 
         #endregion
 
@@ -169,11 +174,80 @@ namespace MISA.WEB07.TNANH.MultiLayer.BL
             double max_officer = 0;
             foreach (var r in officers)
             {
-                double officerCode = double.Parse(r.OfficerCode.Substring(2));
+                double officerCode = double.Parse(r.OfficerCode.Substring(4));
                 if (officerCode > max_officer) max_officer = officerCode;
             }
-
+            max_officer = max_officer + 1;
             return $"NV{max_officer}";
+        }
+
+        protected override void Validate(Method method, Officer officer)
+        {
+            //Check mã nhân viên bị trống
+            if (string.IsNullOrEmpty(officer.OfficerCode))
+            {
+                Errors.Add("EmptyCode");
+
+            }
+
+            //Check mã nhân viên trùng
+            else if (_officerDL.CheckDuplicateCode(method, officer.OfficerCode, officer.OfficerID))
+            {
+                Errors.Add("DuplicateCode");
+
+            }
+
+            //Check họ tên bị trống
+            if (string.IsNullOrEmpty(officer.FullName))
+            {
+                Errors.Add("OfficerName");
+            }
+
+            //Ngày nghỉ việc không được lớn hơn ngày hiện tại
+            if (officer.QuitDate > DateTime.Now)
+            {
+                Errors.Add("Date");
+            }
+
+            //Số điện thoại chỉ được chứa các chữ số
+            if (IsNumber(officer.PhoneNumber) == false)
+            {
+                Errors.Add("PhoneNumber");
+            }
+
+            //Email không đúng định dạng
+            if (IsEmail(officer.Email) == false && !string.IsNullOrEmpty(officer.Email))
+            {
+                Errors.Add("Email");
+            }
+
+            if (Errors.Count > 0)
+            {
+                throw new ValidateException(Errors);
+            }
+        }
+
+        #endregion
+
+        #region ValidateProperties
+
+        //kiểm tra số điện thoại có sai định dạng hay không
+        public bool IsNumber(string pValue)
+        {
+            foreach (Char c in pValue)
+            {
+                if (!Char.IsDigit(c))
+                    return false;
+            }
+            return true;
+        }
+
+        //kiểm tra email có đúng định dạng hay không
+        public bool IsEmail(string eValue)
+        {
+            var email = new EmailAddressAttribute();
+            var emailCheck = email.IsValid(eValue);
+            return emailCheck;
         }
 
         #endregion

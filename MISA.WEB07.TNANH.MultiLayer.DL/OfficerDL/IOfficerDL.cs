@@ -33,5 +33,6 @@ namespace MISA.WEB07.TNANH.MultiLayer.DL
         /// 1 mã nhân viên mới
         /// </returns>
         public List<Officer> NewOfficerCode();
+
     }
 }
